@@ -18,7 +18,7 @@ const StandardMessageForm = ({ props, activeChat }) => {
       .toISOString()
       .replace("T", " ")
       .replace("Z", `${Math.floor(Math.random() * 1000)}+00:00`);
-    const at = attachment ? [{ blob: attachment, file: attachment.name }]: [];
+    const at = attachment ? [{ blob: attachment, file: attachment.name }] : [];
 
     const form = {
       attachments: at,
